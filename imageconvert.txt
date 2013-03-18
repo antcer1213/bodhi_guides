@@ -1,0 +1,5 @@
+mogrify -background white -extent 0x0 +matte *.png
+
+mogrify -format jpg *.png
+
+rm *.png

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Guide to Enlightenment - Modifying Menus</title>
+
+	<script src="../../scripts/modernizr.js"></script><!--[if lt IE 9]><script src="../../scripts/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+	<script src="../../scripts/lightbox/js/jquery-1.7.2.min.js"></script>
+	<script src="../../scripts/lightbox/js/lightbox.js"></script>
+
+  <link href="../../scripts/lightbox/css/lightbox.css" rel="stylesheet" />
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../scripts/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Index</a><a class="nav" target="_parent"  href="index.html">Index</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Desktop</a><a class="nav" target="_parent"  href="#">Desktop</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Main Menu</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Modifying Menus</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtual Desktops</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Tools</a><a class="nav" target="_parent"  href="#">Tools</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Modules Info</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Module Reference</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Shelves & Gadgets</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Everything Module</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Looks</a><a class="nav" target="_parent"  href="#">Looks</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Theme Info</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Creating Themes</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profiles</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Settings</a><a class="nav" target="_parent"  href="#">Settings</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">General Settings</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Compositing</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Bindings</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Other Settings</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Colophon</a><a class="nav" target="_parent"  href="appendix.html">Colophon</a>
+
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Guide - Modifying Menus</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[click on any image to enlarge]
+</p>
+
+
+This is a beginners Introduction to customizing <strong>Bodhi Linux's</strong> Menus. It was created and tested for 
+<strong>Bodhi Linux</strong> versions 1.0.0 through 1.2.0. The current revision was made to cover changes implemented 
+in <strong>Bodhi Linux</strong> versions 2.0 through 2.2.0.
+
+    <ol>
+<li><a class="normal" href="#Favorite%20Applications">Favorite Applications</a></li>
+<li><a class="normal" href="#Customizing%20Bodhi%20Linux's%20Menu">Customizing Bodhi Linux's Menu</a>
+<ul>
+    <li><a class="normal" href="#Adding%20an%20Application">Adding an Application</a></li>
+    <li><a class="normal" href="#Removing%20an%20Application">Removing an Application</a></li>
+</ul></li>
+<li id="Favorite%20Applications"><a class="normal" href="#Enlightenment's%20Menu%20Settings">Enlightenment's Menu Settings</a></li>
+<li><a class="normal" href="#Further%20Information">Further Information</a></li>
+	</ol>
+
+
+<div class="contentcontainer">
+<div class="orange eightywidth center changeonlowwidth">
+<h2>Favorite Applications</h2>
+
+<p class="clear">You can add apps you use the most or otherwise want to access quickly to the <strong>Favorites Menu</strong>. 
+This list of favorite applications can be found in either <strong>Bodhi Linux's Main Menu</strong> or by right 
+clicking any unoccupied spot on the desktop. On a default installation of <strong>Bodhi Linux</strong>, 
+the <strong>Favorites</strong> option will not show up in the <strong>Main Menu</strong> nor will right-click open the 
+<strong>Favorites Menu</strong>. This is because no applications are added to the favorites list by default &#8212; 
+it is the philosophy of <strong>Bodhi Linux</strong> not to try to second guess what the user wants and to keep things 
+minimal and let the users decide what they want themselves.</p>
+<hr class="divide" />
+<br />
+<p class="clear">
+	<a class="img normalpicture" rel="lightbox" href="../images/fav00-lx.png"><img class="fortywidth floatr changeonlowwidth" src="../images/fav00-lx.png" alt="(Adding LXTerminal to Favorites)" /></a>
+	<h3>Ex. Adding LXTerminal to Favorites</h3>
+<p>There are two methods of adding an application to the <strong>Favorites Menu</strong>. For the first method, 
+launch the application you wish to add, say <strong>LXTerminal</strong>, the default terminal-emulator for <strong>Bodhi Linux</strong>. 
+Right-click the application window's border (title bar) at the top. 
+This will open a menu. Mouse over the application's name, then select the  
+<em>Add to Favorites Menu</em> option (with the icon representing a bookmark), as depicted in the image. 
+<strong>LXTerminal</strong> will now appear in your <strong>Favorites Menu</strong>. 
+Incredibly simple and truly elegant!</p>
+<hr class="divide" />
+<br />
+<p class="clear">
+	<a class="img normalpicture" rel="lightbox" href="../images/fav02.png"><img class="twentyfivewidth topml floatl imageonlowwidth" alt="(Favorite Applications dialog)" src="../images/fav02.png" /></a>
+The second method is pretty easy, too, just has a few more steps. 
+From <strong>Bodhi Linux's Main Menu</strong>, choose 
+<small><em>Settings>All>Apps>Favorite Applications</em></small>. 
+This launches <strong>E17's Favorite Applications</strong> window. Under the <em>Applications</em> tab, scroll 
+down the list until you find the application you wish to add, click it to highlight it and then click the <em>Add</em> button. 
+An indicator <small>(in the case of the image, an orange fill-in)</small> 
+will appear beside the application's name as depicted in the image for <strong>Midori</strong>. Click <em>Apply</em> 
+and then <em>OK</em>. The application will now be added to your 
+<strong>Favorites</strong> list and appear in the 
+<strong>Favorites</strong> menus.</p>
+<p class="smalltext"><code>Note:</code> 
+The indicator varies from <strong>theme</strong> to <strong>theme</strong>. A blue dot is the indicator in the Default theme, and, thus, the most common.)</p>
+<hr class="divide" />
+<br>
+<p class="clear">
+	<a class="img normalpicture" rel="lightbox" href="../images/fav03.png"><img class="twentyfivewidth floatr imageonlowwidth" alt="(Removing an App from Favorites Menu)" src="../images/fav03.png" /></a>
+To remove an application from the <strong>Favorites Menu</strong>, launch the 
+<strong>Favorite Applications</strong> window as above. Go to the <em>Order</em> tab. Find the application 
+you wish to remove, click it to highlight it and then click the <em>Remove</em> button. 
+Now click <em>Apply</em> and then <em>OK</em>. 
+The application is now removed from your <strong>Favorites Menu</strong>.
+</p>
+<hr class="divide" />
+<br />
+<p>If you are an avid user of the <strong>Favorites Menu</strong> and frequently use a lot of applications, 
+you may find your <strong>Favorites Menu</strong> becomes rather long and you may desire a different order, 
+perhaps placing the apps you access most often at the top of the list. Naturally, <strong>E17</strong> 
+provides a way to change the order of the applications in the list. Again launch 
+<strong>E17's Favorite Applications</strong>, and once again click on the <em>Order</em> tab, 
+as pictured in the image above. Find the application you wish to move, click it to highlight it. 
+Now click either the <em>Up</em> or <em>Down</em> buttons to position it where you wish it to be in the menu. 
+If desired, you can do the same for one or more other applications. Once the desired order  is created, 
+click <em>Apply</em> and then <em>OK</em>.</p>
+<div  class="clear" id="Customizing%20Bodhi%20Linux's%20Menu">&nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green eightywidth center changeonlowwidth">
+<h2>Customizing Bodhi Linux's Menu</h2>
+<p id="Adding%20an%20Application"><strong>E17</strong> has a rather unique approach to task of editing, 
+adding or removing menu items. Instead of offering a separate application to change menu items, 
+the ability to graphically edit a menu item is incorporated into <strong>E17</strong> itself. 
+To see how, let's examine the process to add an application to the <strong>Main Menu</strong>.</p>
+<hr />
+<br />
+
+<h3 class="inline">Adding an Application</h3>
+
+<p>There are a couple of occasions where you may need to manually add an application 
+to the <strong>Main Menu</strong>. The most common case is for most command-line apps, 
+as they do not usually need to have menu entries. More rarely, you may install an application with a 
+graphical user interface which does not appear in the menu, probably due to how the 
+application was packaged. However, this should rarely happen, so we will discuss it second, 
+and first focus on adding a command-line app, which is much more common. 
+The example we will use is nano, a simple editor for use in terminals.</p>
+<p>First, we will add a menu entry for <strong>nano</strong>, which is done by creating a .desktop file(launcher) for it. Go to 
+<span class="smalltext"><em>Main Menu>Settings>All>Apps>Personal Application Launchers</em></span>. 
+Select <em>Add</em>, which will open the <strong>Desktop Entry Editor</strong> window, 
+and fill in the following:</p>
+<ul>
+    <li><h3><em>The Basic Tab</em></h3>
+        <ul>
+        <li>Name: Nano <small>(the name you want to appear in the Menu)</small><br></li>
+        <li>Comment: Command-line text-editor <small>(this can be anything you like)</small><br></li>
+        <li>Application: nano <small>(command used to launch the app in a terminal)</small><br /><br /></li>
+		</ul></li>
+    <li><h3><em>The Icon Tab</em></h3>
+        <ul>
+        <li>Icon: If you know the name of the icon you want to use from the icon-set you are currently using, you can simply enter it here. 
+        However, if you want to select your own image, click on the empty square. 
+        This will open the <strong>Select an Icon</strong> window. There, you can navigate to and select the image you wish to use. 
+        For now, just type <em>text-editor</em> for the default text-editor 
+        image of your icon-set.<br /><br /></li>
+        </ul></li>
+    <li><h3><em>The General Tab</em></h3>
+        <ul>
+        <li>Generic name: Editor<br></li>
+        <li>Categories: Utility;Editor;<br></li>
+        <li>MIME Type: text/plain;<br /><br /></li>
+        </ul></li>
+    <li><h3><em>The Options Tab</em></h3>
+        <ul>
+        <li>Check "Run in Terminal" and "Show in Menus".<br /><br /></li>
+        </ul></li>
+</ul>
+<p>When you finish making the entries, click <em>Apply</em>, then <em>Close</em>. 
+This creates a .desktop file for <strong>nano</strong> located in 
+<small>/.local/share/applications</small> of your home directory, 
+which gives instructions to be seen in the Menus and run in a terminal when clicked.
+Now <strong>Nano</strong> will be in the menu under Accessories. 
+(You may have to select <em>Restart</em> from <em>Main Menu>Enlightenment</em> 
+to refresh <strong>Enlightenment</strong> and see any changes ASAP.)</p>
+<hr class="divide" />
+<p>Now let's discuss how to add an app that has a graphical user interface. 
+First, we need to open the app. For our example, we will use Leafpad, the very simple, 
+graphical text-editor that comes installed in <strong>Bodhi Linux</strong> 
+(this is already read in the main menu; we are just going through the motions as an example). 
+There are three or more different ways you open the app, 
+even if the app doesn't appear in the <strong>Main Menu</strong>. 
+You can launch the app from a terminal or find the file for the app and launch it by clicking on it. 
+However, we will use the <strong>Everything</strong> module to open it:</p>
+<p>
+
+<a class="img normalpicture" rel="lightbox" href="../images/everything_ar.png">
+<img class="center thirtysixwidth imageonlowwidth" alt="(everything ar typed)" src="../images/everything_ar.png" /></a>
+
+First, we need to launch <strong><a class="normal" href="everything.html">Run Everything</a></strong>. 
+It can be found in the <strong>Main Menu</strong> or launched by the key board shortcuts <em>Alt+Esc</em>,
+<em>Ctrl+Alt+Space</em>, or <em>Win+Space</em>. 
+Once it launches, start typing 'Leafpad' and, as soon as it is displayed, 
+navigate to it with the arrow-keys and press enter to launch it.
+<br /><br />Once Leafpad launches, right-click its window border (title bar) at the top. 
+Choose <em>Leafpad>Edit Icon</em>. A <strong>Desktop Entry 
+Editor</strong> window will pop up as pictured below:</p>
+
+<a class="img normalpicture" rel="lightbox" href="../images/desktopentry0.png">
+<img class="center thirtythreewidth imageonlowwidth" alt="(desktop entry editor)" src="../images/desktopentry0.png" /></a>
+
+<p>Click on <em>Options</em>, and you will see that the option <em>Show In Menus</em> is selected. 
+If you are adding an app which was not automatically added to the <strong>Main Menu</strong>, 
+you can select the <em>Show In Menus</em> option, then click <em>Apply</em> and <em>Close</em>. 
+Now, your app will appear in the <strong>Main Menu</strong> and other menus where it should be visible. 
+(As mentioned above, you may have to select <em>Restart</em> in <em>Main Menu>Enlightenment</em> 
+to see changes.)</p>
+<div class="clear" id="Removing%20an%20Application">&nbsp;</div>
+
+<br /><hr /><br />
+
+<h3 class="inline">Removing an Application</h3>
+
+<p>Now that you have seen how to use the <strong>Desktop Entry Editor</strong> 
+it should be obvious how you remove an entry from the menu. Launch the application 
+you wish to remove, right-click its window border (title bar),
+and choose <em>[application-name]>Edit Icon</em>. A <strong>Desktop Entry Editor</strong> 
+window will pop up, click on <em>Options</em> and then uncheck <em>Show In Menus</em> 
+and then click <em>Apply</em> and <em>Close</em>.</p>
+<div id="Enlightenment's%20Menu%20Settings">&nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="orange eightywidth center changeonlowwidth">
+<h2>Enlightenment's Menu Settings</h2><br class="onmobile" />
+
+<a class="img normalpicture" rel="lightbox" href="../images/e17_menu_settings.png">
+<img class="floatr thirtywidth imageonlowwidth" alt="(Menu Settings)" src="../images/e17_menu_settings.png" /></a>
+<p>There is, yet, one more tool for altering <strong>Bodhi Linux</strong>'s menus
+in <strong>E17</strong>'s settings to consider. This is the <strong>Menu Settings</strong> 
+dialog, pictured to the right. To open this window, open the <strong>Main Menu</strong> 
+and then choose <em>Settings>All>Menus>Menu Settings.</em></p>
+<p>The <strong>Menu Settings</strong> window has four tabs: <strong>Menus</strong>, 
+<strong>Applications</strong>, <strong>Autoscroll</strong>, and <strong>Miscellaneous</strong>. 
+The <strong>Menus</strong> tab is opened by default. This tab is divided into three subsections:</p>
+<ul>
+    <li><h3><em>Main Menu</em></h3> 
+    Checking or unchecking an entry here will either display or not display the selected 
+    sub-section in the <strong>Main Menu</strong>.<br /></li>
+
+    <li><h3><em>Applications Display</em></h3> 
+    Checking or unchecking an entry here changes the way an application is displayed in the 
+    <strong>E17</strong> menus. You can choose to display an application's name, its generic name, 
+    and/or the app's comment. These entries are the same that appear in the 
+    <strong>Desktop Entry Editor</strong> and of course can be edited there if need be.<br /></li>
+   
+    <li><h3><em>Gadgets</em></h3> 
+    This feature is deprecated and makes no difference whether checked or unchecked.</li>
+</ul>
+<p class="smalltext"><code>Note:</code> To ensure that the changes are made after making any changes in the 
+<strong>Menu</strong> tab or any other tab of the <strong>Menu Settings</strong> window, be sure to click
+<em>Apply</em> or the change will not be made.</p>
+<p>Clicking the <strong>Applications</strong> tab in the <strong>Menu Setting</strong> 
+window allows you to choose what menu source the system uses to display the <strong>Applications</strong> sub-menu. 
+In a default installation of <strong>Bodhi Linux</strong>, the choices are <strong>Enlightenment</strong> and 
+<strong>Lxde (Applications)</strong>. The only difference is the xml file it uses to display the Applications menu; 
+No noticable difference, since the end-result is the same.</p>
+<p>The remaining two tabs, <strong>Autoscroll</strong> and <strong>Miscellaneous</strong>, 
+allow you to tweak various aspects of how the <strong>E17</strong> menus behave. 
+The best way to see what these various settings do is to play with them.</p>
+<div class="clear" id="Further%20Information">&nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Further Information</h2>
+
+<p>Some sub-menu items are sufficiently complex to warrant a separate article describing their use:</p>
+<ul>
+    <li><a class="normal" href="settings.html">Enlightenment Settings:</a> An in-depth look at all the <strong>E17</strong> Settings.</li>
+    <li><a class="normal" href="everything.html">The Everything Module:</a> An examination of the basic usage of the Run Everything Module.</li>
+    <li><a class="normal" href="other_settings.html">Application Theme:</a> Controls the look of GTK applications and allows you to change between icon-sets.</li>
+</ul>
+<p>A few slightly more advanced topics have not been covered here:</p>
+<ul>
+    <li>Organizing sub-menus under the Application menu's sub-menus.</li>
+    <li>Maybe more.</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prev:</div>
+		<div class="bottom centertext"> Contents:</div>
+		<div class="bottom righttext">Next:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="main_menu.html">Main Menu</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Index</a></div>
+		<div class="bottom righttext"><a target="_parent" href="virtual_desktops.html">Virtual Desktops</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>

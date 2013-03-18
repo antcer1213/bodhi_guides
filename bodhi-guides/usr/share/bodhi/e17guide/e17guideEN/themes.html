@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Guide to Enlightenment - General Theme Info</title>
+
+	<script src="../../scripts/modernizr.js"></script>
+
+	<script src="../../scripts/lightbox/js/jquery-1.7.2.min.js"></script>
+	<script src="../../scripts/lightbox/js/lightbox.js"></script>
+
+  <link href="../../scripts/lightbox/css/lightbox.css" rel="stylesheet" />
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../scripts/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Index</a><a class="nav" target="_parent"  href="index.html">Index</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Desktop</a><a class="nav" target="_parent"  href="#">Desktop</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Main Menu</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Modifying Menus</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtual Desktops</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Tools</a><a class="nav" target="_parent"  href="#">Tools</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Modules Info</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Module Reference</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Shelves & Gadgets</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Everything Module</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Looks</a><a class="nav" target="_parent"  href="#">Looks</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Theme Info</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Creating Themes</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profiles</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Settings</a><a class="nav" target="_parent"  href="#">Settings</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">General Settings</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Compositing</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Bindings</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Other Settings</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Colophon</a><a class="nav" target="_parent"  href="appendix.html">Colophon</a>
+
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.jpg" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Guide - Theme Info</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[click on any image to enlarge]
+</p>
+	
+
+Enlightenment (E17) gives the user a great amount of 
+control when it comes to configuring their computing 
+environment. It is quite common for E17 users to spend hours
+tweaking different settings to get it just right. Some of these
+users have been kind enough to share their hard work using Themes.
+<br /><br />
+Themes provide a way to package together all the different
+options that alter the <strong>look</strong> of your desktop. 
+In a nutshell, they answer the question of <em>how</em> 
+to display different aspects of your desktop.
+This can include 
+everything from the background to the Clock 
+<a class="normal" href="shelves_and_gadgets.html#Gadgets">Gadget</a> and more.
+<br /><br />
+
+
+<ol>
+  <li><a class="normal" href="#Switching%20Themes">Switching Themes</a></li>
+  <li><a class="normal" href="#Adding%20Themes">Adding Themes</a></li>
+  <li><a class="normal" href="#Advanced%20Themes">Advanced Themes</a>
+  	<ul>
+    <li><a class="normal" href="#Assigning%20Themes">Assigning Themes</a></li>
+    <li><a class="normal" href="#Removing%20Themes">Removing Themes</a></li>
+    <li><a class="normal" href="#Base%20Theme">Base Theme</a></li>
+    <li><a class="normal" href="#Saving%20Themes">Saving Themes</a></li>
+    <li><a class="normal" href="#Creating%20Themes">Creating Themes</a></li>
+    </ul></li>
+  <li id="Switching%20Themes"><a class="normal" href="#Changing%20Just%20the%20Background">Changing Just the Background</a></li>
+  <li><a class="normal" href="#Other%20Theme%20Considerations">Other Theme Considerations</a></li>
+</ol>
+<br />
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Switching Themes</h2>
+
+<p>To bring up the Theme Selector dialog go to
+<small><em>Main Menu>Settings>Theme</em></small>.
+(If you do not see this option, you may need to <em>load</em> 
+the  Theme <a class="normal" href="modules.html">Module</a>)
+</p>
+<p>This is the Basic view of the Theme Selector:
+</p>
+
+<a class="img normalpicture" rel="lightbox" href="../images/e17-guide-themes-basic-view.jpg">
+<img class="fortywidth center changeonlowwidth" alt="(Theme Selector - Basic)" src="../images/e17-guide-themes-basic-view.jpg" /></a>
+
+<p>The list on the left shows all the available Themes. Clicking on one 
+will show a preview of the Theme on the right. When you find 
+a Theme you like, select it from the list and click <em>OK</em> or 
+<em>Apply</em>. The changes will take place immediately. In the unusual
+circumstance that they don't, try restarting E17 
+<small>(<em>Main Menu>Enlightenment>Restart or CTRL+ALT+END</em>)</small>.
+</p>
+<p>You may be wondering what the options <em>Personal</em> and 
+<em>System</em> in the top left of the dialog mean. This simply indicates 
+in what directory the Theme Selector is looking for Themes. The 
+<em>System</em> option tells it to look in 
+<code>/usr/share/enlightenment/data/themes/</code>. The <em>Personal</em> 
+option points to <code>~/.e/e/themes/</code>. If you are the creative type 
+and want to create your own Theme, you can save it here. (See 
+<a class="normal" href="creating_themes.html"> Creating Themes</a>) 
+Also, we encourage you to consider sharing it with the rest
+of the Bodhi Linux community.
+</p>
+</div><div id="Adding%20Themes" class="clear">&nbsp;</div>
+</div>
+
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Adding Themes</h2>
+
+<p>By default, Bodhi only comes with a handful of Themes. You can download 
+more from 
+<a class="normal" href="http://art.bodhilinux.com"> Bodhi's Art Wiki</a> 
+(external link). Follow the link to <em>Enlightenment Themes</em>, 
+and you can install the entire Bodhi Theme Pack featuring many beautiful 
+themes created by our community members.
+</p>
+<p>Once installed, your new Themes should show under the <em>System</em> 
+Theme options.
+</p>
+<p>You might want to also check out the 
+<a class="normal" href="http://exchange.enlightenment.org/theme">Enlightenment 
+Exchange</a> (external link) for other themes created by the greater E17 
+community.
+</p>
+</div><div id="Advanced%20Themes" class="clear">&nbsp;</div>
+</div>
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Advanced Themes</h2>
+
+<p>By now, you probably have tried out several different Themes. 
+It's likely that you have had likes and dislikes about several of them, 
+and you wish you could use the Menu from one Theme along with the Clock 
+style of another. As mentioned before, the user is in control of their 
+desktop, and the Theme Selector makes it very easy to mix and match 
+different elements from different Themes.
+</p>
+<p>Open the Theme Selector and click on the <em>Advanced</em> button in
+the bottom right corner. The dialog will expand into three sections:
+</p>
+
+<a class="img normalpicture" rel="lightbox" href="../images/e17-guide-themes-advanced-view.jpg">
+<img class="sixtywidth center changeonlowwidth" alt="(Theme%20Selector%20-%20Advanced)" src="../images/e17-guide-themes-advanced-view.jpg" /></a>
+
+<p>The first section on the left, Theme Categories, shows all the 
+different options that can be controlled by Themes. The middle section, 
+Themes, shows all the available Themes on your computer. The right most 
+section, Preview, is a preview window like there was in the Basic view.
+</p>
+<p>In Theme Categories, all the options with a <em>check</em> next to 
+them have an assigned Theme. In the Themes section, all Themes with the 
+<em>paintbrush and colors icon</em> are Themes that have been assigned 
+to at least one category.
+</p>
+<div id="Assigning%20Themes" class="clear">&nbsp;</div>
+<div>&nbsp;</div>
+
+
+
+
+<h3 class="inline">Assign Themes</h3><br />
+
+<p>To assign a theme to a category, select the category in the Theme 
+Categories section. Then select the desired Theme from the Themes section, 
+and click the <em>Assign</em> button near the bottom left corner.
+</p>
+<p>For example, say you like most of the <em>Sky-Bodhi</em> Theme, 
+except you would prefer to use the Start button from <em>Grayish-Bodhi</em>. 
+Open the Advanced Theme Selector dialog, select the <em>modules/start</em> 
+category under Theme Categories, select the <em>AL-Grayish-Bodhi</em> 
+theme under Themes, and click <em>Assign</em>. You will notice that an 
+icon displays next to the newly assigned category. This indicates the 
+category's Theme has been changed. Changes will not take effect until 
+you click <em>OK</em> or <em>Apply</em> at the bottom of the dialog. 
+You can make assignments to as many categories as you want, and when you 
+are ready, <em>Apply</em> all the changes at once. Using our example, 
+if you go back and look at the <em>modules/start</em> category you should 
+see a <em>check</em> next to it indicating that this category is assigned 
+a Theme. Selecting the category will show you what Theme is assigned by 
+automatically selecting it in the Themes section.
+</p>
+<div id="Removing%20Themes" class="clear">&nbsp;</div>
+<div>&nbsp;</div>
+
+
+
+
+
+<h3 class="inline">Remove Themes</h3><br />
+
+<p>If you want to remove an assigned Theme from a category, select the 
+category and click <em>Clear</em>. Alternatively, you can remove all 
+Themes by clicking <em>Clear All</em>. Then click <em>OK</em> or 
+<em>Apply</em> to remove the assignment.
+</p>
+<div id="Base%20Theme" class="clear">&nbsp;</div>
+<div>&nbsp;</div>
+
+
+
+
+
+
+<h3 class="inline">Base Theme</h3><br />
+
+<p>One special category of note is the <em>Base Theme</em> category. 
+The Basic view of the Theme Selector is actually a streamlined interface 
+for assigning this category.  If a Theme is assigned to <em>Base Theme</em>, 
+it will apply any customizations to any category that is defined in the Theme.
+</p>
+<p>No <em>check marks</em> will show next to affected categories to 
+indicate they are customized, as the result of assigning the 
+<em>Base Theme</em>. This is because assigning a Theme to any of the 
+other categories will override any customizations from the 
+<em>Base Theme</em>. 
+</p>
+<p>Any category without a Theme assigned (either directly assigned or 
+from the <em>Base Theme</em>) will use the <em>default</em> theme. 
+</p>
+<div id="Saving%20Themes" class="clear">&nbsp;</div>
+<div>&nbsp;</div>
+
+
+
+
+
+<h3 class="inline">Saving Themes</h3><br />
+
+<p>Now perhaps, you have spent several hours creating a custom Theme
+by mixing up themes from the Advanced Theme Selector. You want
+to try a new look, but not lose your current Theme. At this point,
+you are probably looking for the <em>Save</em> button, but you won't find it
+because it does not exist. To get around this, we can use Profiles. 
+(Further information in the <a class="normal" href="profiles.html">Profiles section.</a>)
+</p>
+<p>During your first boot of Bodhi, you selected a Profile (Bare,
+Desktop, Fancy, etc.). All the changes you have made to your current
+theme are now a part of that Profile you chose.
+</p>
+<p>To open the Profile dialog, go to <small><em>Main 
+Menu>Settings>All>Settings>Profiles</em></small>.
+This will open the Profile Selector:
+</p>
+
+<a class="img normalpicture" rel="lightbox" href="../images/e17-guide-themes-profiles.jpg">
+<img class="thirtythreewidth center imageonlowwidth" alt="(Profile%20Selector)" src="../images/e17-guide-themes-profiles.jpg" /></a>
+
+<p>The Profile you chose on your initial boot will be selected. 
+Click the <em>Add</em> button at the bottom, and enter a name into 
+the Add New Profile dialog that pops up. Click <em>OK</em>, 
+and your new Profile will be added to the list of available profiles. 
+It is, essentially, a duplicate of your current Profile, allowing you to 
+try other Profiles and still be able to return to it.
+</p>
+<div id="Creating%20Themes" class="clear">&nbsp;</div>
+<div>&nbsp;</div>
+
+
+
+
+
+<h3 class="inline">Creating Themes</h3><br />
+
+<p>The above method of using Profiles is a quick hack and is not the
+most elegant way to save a Theme. The ideal method should be
+to create an actual Theme. This topic is beyond the scope of this
+section. Check out <a class="normal" href="creating_themes.html">Creating Themes</a> 
+section for instructions on how to do this.
+</p>
+</div><div id="Changing%20Just%20the%20Background" class="clear">&nbsp;</div>
+</div>
+
+
+
+
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Change Just the Background</h2>
+
+<p>If you're interested in changing just the background (wallpaper), 
+here's how. Go to <small><em>Main Menu>Settings>Wallpaper</em></small>. 
+Uncheck the <em>Use Theme Wallpaper</em> 
+option, and select the background you want. You may need to convert the 
+picture if you do not see it initially. Use the <em>Picture</em> dialog to 
+do this.
+</p>
+
+<a class="img normalpicture" rel="lightbox" href="../images/wallpaper-settings.jpg">
+<img class="fortywidth center changeonlowwidth" alt="(Wallpaper Settings)" src="../images/wallpaper-settings.jpg" /></a>
+
+</div><div id="Other%20Theme%20Considerations" class="clear">&nbsp;</div>
+</div>
+
+
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Other Theme Considerations</h2>
+
+<p>This article has discussed how to customize your E17 Theme and various 
+elements within it. However, many applications in use on Linux systems are 
+built using GTK/QT and therefore will not be affected by changes to the 
+E17 Theme. For information on how to control the look of GTK/QT applications 
+please see the section 
+<a class="normal" href="other_settings.html">Other Settings</a>. 
+</p>
+</div>
+</div>
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prev:</div>
+		<div class="bottom centertext"> Contents:</div>
+		<div class="bottom righttext">Next:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="shelves_and_gadgets.html">Shelves & Gadgets</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Index</a></div>
+		<div class="bottom righttext"><a target="_parent" href="profiles.html">Profiles</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>

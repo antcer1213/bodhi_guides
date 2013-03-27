@@ -228,6 +228,9 @@ MODS
 .onmobile {
 	display: none;
 }
+.onnormal {
+	display: inline;
+}
 ul.specialcases {
 	list-style: none;
 	margin-left: -40px;
@@ -325,6 +328,9 @@ bottom: 17px;
 	}
 	.onmobile {
 	display: inline;
+	}
+	.onnormal {
+	display: none;
 	}
 	.indexonsmallwidth {
 	display:none;

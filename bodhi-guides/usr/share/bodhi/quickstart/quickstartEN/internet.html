@@ -11,7 +11,7 @@
 	<script src="../../scripts/lightbox/js/lightbox.js"></script>
 
   <link href="../../scripts/lightbox/css/lightbox.css" rel="stylesheet" />
-  <link href="qs.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../scripts/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link href="qs.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../scripts/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
   <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
 
 </head>
@@ -23,12 +23,12 @@
 		<nav>
 			<ul id="nav" class="navonlowwidth">
 				<li class="qsindex"><a class="mobile" target="_parent"  href="index.html">QuickStart Index</a><a class="nav" target="_parent"  href="index.html">QuickStart Index</a>
-					
+
 				</li>
 				<li><a class="mobile" target="_parent"  href="enlightenment.html">Enlightenment</a><a class="nav" target="_parent"  href="#">Getting Started</a>
 					<ul>
 						<li><a class="dropdown" target="_parent"  href="internet.html">Connecting to the Internet</a></li>
-						<li><a class="dropdown" target="_parent"  href="software.html">Installing Software</a></li>					
+						<li><a class="dropdown" target="_parent"  href="software.html">Installing Software</a></li>
 					</ul>
 				</li>
 				<li><a class="mobile" target="_parent"  href="getting_started.html">Getting Started</a><a class="nav" target="_parent"  href="#">Enlightenment</a>
@@ -81,7 +81,7 @@
 	<div class="fortywidth floatr live changeonlowwidth">
 					<div class="orange eightywidth changeonlowwidth block">
 <small>
-<span class="boldtext orangetext">Note:</span> 
+<span class="boldtext orangetext">Note:</span>
 If you are using a liveUSB/CD, <a class="normal" href="#liveusb">click here</a> for a brief how-to on enabling
 the missing nm-applet.
 </small>
@@ -97,7 +97,7 @@ the use of Network Manager (aka nm-applet).<br /><br />
 	<span class="normalpicture"><img src="../images/nm-applet.jpg" alt="(An example of an nm-applet.)" class="tenwidth center tallimageonlowwidth" /></span>
 		<br />
 You will see an icon <span class="boldtext italictext">similar</span> to this
-in your System tray (systray).<br /><br /><span style="font-size:80%;">* If you do not see a systray 
+in your System tray (systray).<br /><br /><span style="font-size:80%;">* If you do not see a systray
 anywhere on your desktop, please read <code>**Note</code> in LiveUSB/CD section at the bottom of the page.</span>
 
 	<p><br /></p>		</div>
@@ -124,7 +124,7 @@ After a few moments, a connection should be established.
 <a class="img normalpicture" rel="lightbox" href="../images/network-edit.jpg">
 	<img src="../images/network-edit.jpg" alt="(Editing Network settings)" class="twentyfivewidth floatr imageonlowwidth" />
 </a>
-	
+
 											<div class="green clearonlowwidth fiftywidth changeonlowwidth">
 <p>Connections
 can then be edited by right clicking on the icon. Also, please notice
@@ -139,7 +139,7 @@ problems can be notoriously difficult to diagnose, especially on a
 system that is not able to make a connection at all. If these steps
 fail, the best advice we can give is to get on a system that does make
 a connection (or use a wired connection if wireless is failing) and join
-us on IRC or the Bodhi Forums. See the 
+us on IRC or the Bodhi Forums. See the
 <a class="normal" href="resources.html">Resources Page.</a></p>
 													</div>
 <p><br /></p>
@@ -148,21 +148,31 @@ us on IRC or the Bodhi Forums. See the
 <div class="contentcontainer">
 
 <hr style="height: 2px;" />
-															<div class="orange ninetywidth center centertext">
-<h2 id="liveusb"><span class="boldtext">For Those Using a LiveUSB/CD...</span></h2>
-		<br />
-Because the Network Manager(nm-applet) is a Startup 
-Application and Bodhi's LiveUSB/CDs do not currently support this, the Network 
-Manager will not run by default. To manually run it, navigate to 
-<span class="italictext">Main Menu&gt;Applications&gt;Internet </span>
-and click<span class="italictext"> Network. </span>You should then see
-an icon similar to the one pictured at the top of this page in the System
-tray. You can now follow the instructions given in this guide to
-connect to a network.
-		<br /><br /><br />
+															<div class="orange ninetywidth center">
+<h2 id="liveusb" class="centertext"><span class="boldtext">For Those Using a LiveUSB/CD...</span></h2>
+		
+<p class="lefttext">
+Because the Network Manager(nm-applet) is a Startup
+Application and Bodhi's LiveUSB/CDs do not currently support this, the Network
+Manager will not run by default.
+</p>
+<p>
+To manually start the applet: 
+<ul>
+<li>Navigate to <span class="italictext">Main Menu&gt;Run Everything</span> or
+press the <small><code>Alt+Esc</code></small> key combination.
+This launches Enlightenment's <b>Everything</b> Module, which is described
+in detail <a href="everything.html" class="normal">here</a>.</li>
+<li>Type <code>"network"</code> and click on the <span class="boldtext">Network</span> entry that 
+appears. You should then see an icon similar to the one pictured at the top of this page 
+in the System tray and can now follow the instructions given in this guide to
+connect to a network.</li>
+</ul>
+</p>
+<p><br />
 <small>
 <code>*Note</code>: Please know that once you've installed Bodhi Linux, the Network
-Manager automatically runs on startup, as is the norm. 
+Manager automatically runs on startup, as is the norm.
 		<br /><br />
 
 <code>**Note</code>: Also, bear in mind that some profiles do not have the System tray
@@ -172,7 +182,7 @@ A left-click on the desktop will open the <span class="italictext">Main Menu</sp
 We recommend the Laptop or Desktop profile, since they both have the
 System tray clearly visible on a shelf. You can also add the systray gadget manually to any profile, 
 but that is beyond the scope of this section.</small>
-
+</p>
 															</div>
 </div>
 

@@ -1,0 +1,71 @@
+@import "../../scripts/styles.css";
+/*
+General
+*/
+div.backgroundmenu
+{
+background-image:url('../images/bodhi_menu.png');
+background-repeat:repeat;
+background-position:right top;
+  opacity:0.5;
+  filter:alpha(opacity=50);
+}
+div.transbox
+  {
+background: transparent;
+opacity: 1.0;
+  }
+table.eightp {
+padding: 8px;
+}
+table.fivep {
+padding: 5px;
+}
+td.fiftyh {
+height: 50px;
+}
+.thirtyw {
+width: 30px;
+}
+.fiftyw {
+width: 50px;
+}
+.videowidth {
+width: 100%;
+}
+.realspecial {
+  left: -7px;
+  right: -7px;
+}
+/*
+ End
+*/
+/*
+Compositing Page
+*/
+
+@media screen and (min-width: 601px) {
+.topcomposite {
+z-index: 999999;box-shadow: 0px 4px 14px #191919;
+}
+.bottomcomposite {
+z-index: 9999999;box-shadow: 0px 10px 14px #191919;margin-top: -3.01px; border-top: 0px;border-top-right-radius: 0px;border-top-left-radius: 0px;
+}
+.bottomspecialp {
+margin-top: -1.45em;
+}
+
+}
+
+/*
+End
+*/
+
+@media screen and (max-width: 600px) {
+img.e17guidelogo {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 10px;
+}
+}

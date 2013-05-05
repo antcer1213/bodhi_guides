@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Guide to Enlightenment - Compositing</title>
+
+    <script src="../../scripts/modernizr.js"></script><!--[if lt IE 9]><script src="../../scripts/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../scripts/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+        <a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+        <a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+        <nav>
+            <ul id="nav" class="navonlowwidth">
+                <li><a class="mobile" target="_parent"  href="index.html">Index</a><a class="nav" target="_parent"  href="index.html">Index</a>
+
+                </li>
+                <li><a class="mobile" target="_parent"  href="desktop_menu.html">Desktop</a><a class="nav" target="_parent"  href="#">Desktop</a>
+                    <ul>
+                        <li><a class="dropdown" target="_parent" href="main_menu.html">Main Menu</a></li>
+                        <li><a class="dropdown" target="_parent" href="modifying_menus.html">Modifying Menus</a></li>
+                        <li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtual Desktops</a></li>
+                    </ul>
+                </li>
+                <li><a class="mobile" target="_parent"  href="tools_menu.html">Tools</a><a class="nav" target="_parent"  href="#">Tools</a>
+                    <ul>
+                        <li><a class="dropdown" target="_parent"  href="modules.html">Modules Info</a></li>
+                        <li><a class="dropdown" target="_parent"  href="module_reference.html">Module Reference</a></li>
+                        <li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Shelves & Gadgets</a></li>
+                        <li><a class="dropdown" target="_parent"  href="everything.html">Everything Module</a></li>
+                        <li><a class="dropdown" target="_parent"  href="eapps.html">Terminology & EFM</a></li>
+                    </ul>
+                </li>
+                <li><a class="mobile" target="_parent"  href="looks_menu.html">Looks</a><a class="nav" target="_parent"  href="#">Looks</a>
+                    <ul>
+                        <li><a class="dropdown" target="_parent"  href="themes.html">Theme Info</a></li>
+                        <li><a class="dropdown" target="_parent"  href="creating_themes.html">Creating Themes</a></li>
+                        <li><a class="dropdown" target="_parent"  href="profiles.html">Profiles</a></li>
+                    </ul>
+                </li>
+                <li><a class="mobile" target="_parent"  href="settings_menu.html">Settings</a><a class="nav" target="_parent"  href="#">Settings</a>
+                    <ul>
+                        <li><a class="dropdown" target="_parent"  href="settings.html">General Settings</a></li>
+                        <li><a class="dropdown" target="_parent"  href="compositing.html">Compositing</a></li>
+                        <li><a class="dropdown" target="_parent"  href="bindings.html">Bindings</a></li>
+                        <li><a class="dropdown" target="_parent"  href="other_settings.html">Other Settings</a></li>
+                    </ul>
+                </li>
+                <li><a class="mobile" target="_parent"  href="appendix.html">Colophon</a><a class="nav" target="_parent"  href="appendix.html">Colophon</a>
+
+                </li>
+            </ul>
+        </nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+    <a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+    <div class="h1"><h1>Bodhi Guide - Compositing</h1></div>
+
+    <br />
+
+    <hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[click on any image to enlarge]
+</p>
+
+
+<p><strong>Compositing</strong> is a feature which adds extra “eye-candy" for your desktop.
+This article will explain what <strong>Compositing</strong> is and does, and describe the
+method of utilizing it in <strong>E17</strong>.</p>
+<!--
+<strong>Compositing</strong> is a feature which adds extra “eye-candy" for your desktop. There are 2
+methods to achieve  <strong>Compositing</strong> in the <strong>Bodhi Linux Enlightenment (E17)</strong>
+window manager. This article will explain what <strong>Compositing</strong> is and does, and describe the
+two methods for utilizing it in <strong>E17</strong>.
+-->
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2 id="what_is_compositing">What is Compositing?</h2>
+<p>
+It may be useful to start with the definition of the root word “composite" from
+<a href="http://www.thefreedictionary.com/composite" class="normal" target="_blank" title="http://www.thefreedictionary.com/composite" rel="nofollow">
+The Free Dictionary</a> online:
+</p>
+<pre style="font-weight: bold; font-family: Arial;">Made up of distinct components; compound.</pre>
+<p>
+This applies to a window manager in the sense that disparate visual
+elements can be combined to create a variety of visual effects. These
+include (but are not limited to): transparency, 3D effects, bending,
+scaling, and rotation. </p>
+<p>
+There is a thorough article of the history and implementation of <strong>Compositing</strong> on
+<a href="http://en.wikipedia.org/wiki/Compositing_window_manager" class="normal" target="_blank" title="http://en.wikipedia.org/wiki/Compositing_window_manager" rel="nofollow">
+Wikipedia</a> for readers who are interested.
+</p>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green hundredwidth topcomposite changeonlowwidth">
+<h2 id="compositing_transparency">Compositing - Transparency <span class="onmobile">Part 1</span></h2>
+<p>
+There is an <strong>E17</strong> <a class="normal" href="modules.html">Module</a> for
+<strong>Compositing</strong> that is installed by default in <strong>Bodhi Linux</strong>.
+It is named, strangely, <strong>Composite</strong>. <br />The only two
+<a class="normal" href="profiles.html">Profiles</a> that it is <em>loaded</em> in by default are the
+<strong>Compositing Profile</strong> and <strong>Fancy Profile</strong>,
+though it can be added to any.
+Simply go to <small><em>Main Menu&gt;Settings&gt;Modules</em></small>.
+There, you will find it under the <em>Look</em> tab.
+</p>
+<p>
+This <strong>Compositing</strong> does two primary things. The
+first is to allow transparent/opaque window effects. In general this
+will be applied to inactive/non-focused windows. In the screenshot,
+you can see that Midori is not the focused window and, as such,
+the desktop is partially visible.
+</p>
+</div>
+<a class="img normalpicture" href="../images/transparent-desktop.png">
+<img src="../images/transparent-desktop.png" alt="(Transparent Desktop image)" class="floatr fiftywidth changeonlowwidth" style="margin-top: 20px;" /></a>
+
+<div class="green fortywidth bottomcomposite changeonlowwidth clearonlowwidth">
+<h2 class="onmobile">Compositing - Transparency Part 2</h2>
+<p class="bottomspecialp">
+<br class="indexonsmallwidth" />
+Some applications (ex. Terminology, the default <strong>Bodhi</strong> terminal emulator) support transparency while active/focused. The same screenshot
+shows Terminology running and focused, yet you are still able to
+see the Midori window behind it <span class="boldtext">and</span>
+the desktop behind <span class="italictext">that!</span>
+The “depth" of the transparency in such an application will be set in that application's preferences
+(location of which will vary by application) and <strong>not</strong> in some general <strong>Compositing</strong> setting.
+</p>
+<p>Be aware that in some <strong>Themes</strong>, a <strong>Composite</strong>
+setting will need to be switched to active transparency. Go to <em>Main Menu&gt;Settings&gt;All&gt;Look&gt; Composite</em>.
+In the lower part of the window, with the <em>Default</em> tab activated, switch to the "Still" setting, and click <em>Apply</em>.
+</p>
+</div>
+</div>
+
+
+<div class="contentcontainer"><br />
+<div class="thirtywidth floatl imageonlowwidth">
+<video class="videowidth" controls="controls">
+    <source src="../videos/bouncy.mp4" type="video/mp4"><source src="../videos/bouncy.ogv" type="video/ogg">
+        <p>Your browser does not support HTML5 video.</p>
+</video>
+</div>
+<div class="orange sixtywidth floatr changeonlowwidth clearonlowwidth">
+    <h2 id="compositing_bouncy">Compositing - Bouncy</h2>
+
+The other effect, which can't be captured in a screenshot, is causing
+windows to “bounce" when switching. Since it cannot be captured via screenshot,
+here is a desktop recording for your viewing pleasure!<br /><br />
+If your browser does not support html5 video then, in essence, this effect
+gives a nice visual cue of which window is focussed when multiple windows are open.
+<br /><br />
+<h3 style="font-size:0.8em;">Getting Rid of "Bouncy" Windows</h3>
+
+Many users like the general effects of Compositing. At the same time,
+they end up disliking the “bouncy" effect that occurs when switching
+windows.<br /><br />
+To disable this effect, go to <small><em>Main Menu&gt;Settings&gt;All&gt;Look&gt;Compositing</em></small>. Click on
+<span class="italictext">Advanced</span>.
+In the lower part of the window, select anything <u>other</u> than <em>default</em>, click <em>Apply</em>,
+and you will no longer have “bouncy" windows.
+<br />
+</div><br />
+</div>
+
+
+<!--
+<div class="contentcontainer"><br />
+<div class="green ninetywidth center">
+<h2 id="ecomorph">Ecomorph</h2>
+
+<p>
+<strong>Ecomorph</strong> is an <strong>E17</strong> port of the popular compositing manager <strong>Compiz</strong>.
+It is an <strong>E17</strong> <a class="normal" href="modules.html">Module</a>.
+Since <strong>Ecomorph</strong> is not part of the standard <strong>Bodhi Linux</strong>
+installation, and because it causes problems on some hardware
+configurations, this article will only direct you through a link on how to get <strong>Ecomorph</strong> installed and running.
+<br /><br />
+Users who are interested in information on setting up <strong>Ecomorph</strong> are recommended to read the relevant section in the
+<a href="http://pclosmag.com/html/Issues/201103/page09.html" class="normal" target="_blank" title="http://pclosmag.com/html/Issues/201103/page09.html" rel="nofollow">
+PCLinuxOS Guide</a> <span class="smalltext">(internet connection required)</span>.
+</p>
+</div>
+</div>
+-->
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+    <div class="navbottomtop">
+        <div class="bottom lefttext">Prev:</div>
+        <div class="bottom centertext"> Contents:</div>
+        <div class="bottom righttext">Next:</div>
+    </div>
+    <div class="navbottombottom">
+        <div class="bottom lefttext"><a target="_parent" href="everything.html">Everything Module</a></div>
+        <div class="bottom centertext"><a target="_parent" href="index.html">Index</a></div>
+        <div class="bottom righttext"><a target="_parent" href="bindings.html">Bindings</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+
+</div>
+</body></html>

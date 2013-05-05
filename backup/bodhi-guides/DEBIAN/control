@@ -1,0 +1,12 @@
+Package: bodhi-guides
+Version: 2.3b
+Section: main
+Priority: optional
+Architecture: all
+Depends: ttf-ubuntu-font-family
+Installed-Size: 12183
+Maintainer: Anthony Cervantes 
+Provides: bodhi-quickstart, bodhi-e17guide
+Conflicts: bodhi-quickstart, bodhi-e17guide
+Replaces: bodhi-quickstart, bodhi-e17guide
+Description: Bodhi QuickStart Guide and Bodhi Guide to Enlightenment
